@@ -1,21 +1,34 @@
-name: Deploy Programmatic SEO Site
+name: Auto-Med-Curator Cloud Pipeline
 
 on:
   push:
     branches:
-      - main  # 當主分支有更新時觸發
+      - main
+  schedule:
+    # 每天 UTC 時間 00:00 (台灣時間早上 08:00) 自動執行
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允許在 GitHub 網頁手動觸發按鈕
 
 jobs:
-  build-and-deploy:
+  run-brain-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: 取得程式碼
         uses: actions/checkout@v3
 
-      - name: 設定 Python 環境
+      - name: 設定 Python 虛擬環境
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
+
+      - name: 安裝系統依賴套件
+        run: pip install -r requirements.txt
+
+      - name: 啟動大腦 (執行 main.py 生成知識資產)
+        env:
+          # 將 GitHub 保險箱的金鑰注入 Python 運行環境
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} 
+        run: python main.py --project med_curator
 
       - name: 執行靜態網頁編譯
         run: python scripts/build_site.py
@@ -24,4 +37,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # 將生成的 public 資料夾發佈出去
+          publish_dir: ./public
