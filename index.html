@@ -3,27 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="aortic dissection, aorta, chest pain, back pain, medical emergency, heart health, cardiovascular disease, aortic rupture, hypertension, Marfan syndrome">
-    <title>Understanding Aortic Dissection: A Critical Overview</title>
+    <meta name="keywords" content="aortic dissection, aorta, heart emergency, chest pain, back pain, medical emergency, cardiovascular disease, diagnosis, treatment, cardiac surgery, vascular emergency">
+    <title>What Is an Aortic Dissection?</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; color: #333; }
-        .diagnostic-box { background: #f0f7ff; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-        .cta-button { display: inline-block; background: #ff9900; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        
+        /* 護城河 1：YMYL 免責聲明 (醒目的警告色) */
+        .disclaimer { background: #fff3cd; color: #856404; padding: 12px 20px; border-radius: 5px; font-size: 0.9em; margin-bottom: 25px; border-left: 4px solid #ffeeba; }
+        
+        /* 主文章區塊 */
+        .article-content { margin-bottom: 40px; font-size: 1.05em; color: #2c3e50; }
+        
+        /* 諮詢轉化區塊 (保持視覺引導) */
+        .diagnostic-box { background: #f0f7ff; padding: 25px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #cce5ff; }
+        .cta-button { display: inline-block; background: #ff9900; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.2s; margin-top: 10px; }
+        .cta-button:hover { background: #e68a00; }
+        
+        /* 護城河 2：文獻溯源 (低調但專業的底色) */
+        .references { background: #f8f9fa; padding: 20px; border-radius: 5px; font-size: 0.85em; color: #555; border-top: 2px solid #e9ecef; }
+        .references h3 { margin-top: 0; color: #34495e; font-size: 1.1em; }
+        .references ul { padding-left: 20px; }
+        
+        .back-link { display: block; text-align: center; margin-top: 30px; color: #2980b9; text-decoration: none; font-weight: 500; }
+        .back-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Understanding Aortic Dissection: A Critical Overview</h1>
+    <h1>What Is an Aortic Dissection?</h1>
     
-    <div class="diagnostic-box">
-        <h2>Consultative Analysis: Is this for you?</h2>
-        <p><strong>Common Anxiety Trigger:</strong> Sudden, severe, tearing or ripping pain in the chest, back, or abdomen; unexplained syncope; signs of stroke; severe shortness of breath.</p>
-        <p><strong>Recommendation:</strong> Seek immediate emergency medical attention by calling 911 (or your local emergency number) if you suspect an aortic dissection. Do not attempt to self-diagnose or drive yourself to the hospital.</p>
-        <br>
-        <a href="https://www.amazon.com/dp/emergency_medical_services_911/?tag=med-sarumurloc-20" class="cta-button" target="_blank">View Recommended Solution</a>
+    <!-- YMYL 免責聲明：放在標題下方第一眼可見處，建立誠實防線 -->
+    <div class="disclaimer">
+        <strong>Medical Disclaimer:</strong> {{ disclaimer }}
     </div>
 
+    <!-- 深度科普區塊：語意坍塌後的長青醫學知識 -->
     <div class="article-content">
-        <p>For more detailed breakdowns, refer to our comprehensive article...</p>
+        {{ seo_article }}
     </div>
+    
+    <!-- 轉化漏斗：承接焦慮並導流至 Amazon -->
+    <div class="diagnostic-box">
+        <h2>Consultative Analysis: Is this for you?</h2>
+        <p><strong>Common Anxiety Trigger:</strong> Sudden, severe, tearing chest or back pain.</p>
+        <p><strong>Recommendation:</strong> Seek immediate emergency medical attention (call 911) if you suspect an aortic dissection. This is a life-threatening condition requiring urgent diagnosis and treatment.</p>
+        <a href="https://www.amazon.com/dp/EMERGENCY_MEDICAL_SERVICE_911/?tag=med-sarumurloc-20" class="cta-button" target="_blank">View Recommended Solution</a>
+    </div>
+
+    <!-- 專業溯源：放在文末，供爬蟲與尋求深度驗證的使用者查閱 -->
+    <div class="references">
+        <h3>Scientific References</h3>
+        {{ references }}
+    </div>
+    
+    <!-- 返回圖書館首頁的動線 -->
+    <a href="index.html" class="back-link">&larr; Back to Medical Library</a>
 </body>
 </html>
