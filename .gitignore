@@ -1,0 +1,14 @@
+# 環境變數與機密資訊
+.env
+
+# Python 虛擬環境
+venv/
+env/
+
+# Python 快取檔案
+__pycache__/
+*.pyc
+
+# 忽略不必要的影音大型暫存檔
+*.mp4
+*.mp3
