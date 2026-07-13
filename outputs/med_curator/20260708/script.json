@@ -1,0 +1,48 @@
+{
+    "metadata": {
+        "title": "Topic Scope Clarification: Non-Medical Legal Cases",
+        "keywords": [
+            "scope limitation",
+            "legal topics",
+            "non-medical inquiry",
+            "information mismatch"
+        ],
+        "tags": [
+            "out-of-scope",
+            "policy",
+            "guidance"
+        ],
+        "product_comparison_data": []
+    },
+    "diagnostic_logic": {
+        "anxiety_trigger": "Information related to legal proceedings and criminal charges, which falls outside the scope of medical anxiety triggers and health-related consultative selling handled by this curator.",
+        "assessment_questions": [
+            "Are you seeking information related to a medical condition or health product?",
+            "Is your inquiry about personal health, wellness, or a specific medical treatment?",
+            "Does this topic relate to a diagnostic pathway or a health intervention?"
+        ],
+        "recommendation_path": "For inquiries regarding legal cases or criminal matters, we recommend consulting qualified legal professionals or reputable news organizations specializing in legal reporting. This platform is dedicated to medical IP curation and health-related consultative selling.",
+        "affiliate_product_id": "N/A - This topic is not related to medical products or services."
+    },
+    "video_scenes": [
+        {
+            "scene_id": 1,
+            "voiceover": "Welcome to our medical IP curation service. We specialize in providing expert guidance and solutions for health-related concerns and medical conditions.",
+            "visual_prompt": "An establishing shot of a medical research lab or a healthcare professional consulting with a patient. Text overlay: 'Medical IP Curation'.",
+            "is_highlight": true
+        },
+        {
+            "scene_id": 2,
+            "voiceover": "The topic you've presented, concerning legal proceedings and criminal charges, falls outside our specialized area of expertise in medical conditions and consultative health solutions.",
+            "visual_prompt": "A clear visual indicating 'out of scope', perhaps a medical symbol with a 'not applicable' sign, transitioning from court imagery to medical imagery.",
+            "is_highlight": true
+        },
+        {
+            "scene_id": 3,
+            "voiceover": "For information on legal matters, we strongly advise consulting with qualified legal professionals or reliable news sources for accurate and appropriate details.",
+            "visual_prompt": "An image of legal counsel or a courthouse, with an overlay suggesting 'Consult Legal Experts'.",
+            "is_highlight": false
+        }
+    ],
+    "seo_article": "This article outlines the specific focus of our medical IP curation platform. Our core mission is to offer expert insights, diagnostic frameworks, and consultative selling pathways exclusively for health-related conditions, wellness products, and medical services. Topics such as legal cases, criminal charges, or non-medical public interest events, including details about individuals involved in legal proceedings, are beyond the scope of our specialized medical content and consultative services. We encourage users seeking information on such subjects to refer to verified legal resources and established news outlets for accurate and comprehensive reporting."
+}

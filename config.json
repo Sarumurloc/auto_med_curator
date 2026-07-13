@@ -1,0 +1,14 @@
+{
+    "med_curator": {
+        "project_name": "醫學策展人",
+        "rss_url": "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml",
+        "topic_focus": "專注於代謝、發炎、睡眠與神經傳導等現代集體焦慮議題。",
+        "affiliate_tag": "med-sarumurloc-20"
+    },
+    "psy_curator": {
+        "project_name": "心理策展人",
+        "rss_url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+        "topic_focus": "專注於潛意識、創傷療癒與親密關係的心理學解析。",
+        "affiliate_tag": "psy-sarumurloc-20"
+    }
+}

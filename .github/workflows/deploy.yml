@@ -1,0 +1,27 @@
+name: Deploy Programmatic SEO Site
+
+on:
+  push:
+    branches:
+      - main  # 當主分支有更新時觸發
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 取得程式碼
+        uses: actions/checkout@v3
+
+      - name: 設定 Python 環境
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 執行靜態網頁編譯
+        run: python scripts/build_site.py
+
+      - name: 部署至 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # 將生成的 public 資料夾發佈出去
